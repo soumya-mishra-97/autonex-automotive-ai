@@ -1,0 +1,48 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: autonex
+      POSTGRES_USER: autonex
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-demo-only}
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U autonex -d autonex"]
+      interval: 5s
+      retries: 10
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://autonex:${POSTGRES_PASSWORD:-local-demo-only}@db:5432/autonex
+      AGENT_MODE: ${AGENT_MODE:-demo}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      LLM_MODEL: ${LLM_MODEL:-gpt-4.1-mini}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-text-embedding-3-small}
+      TRACING_ENABLED: ${TRACING_ENABLED:-false}
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health')",
+        ]
+      interval: 10s
+      retries: 10
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "127.0.0.1:3000:80"
+    depends_on:
+      api:
+        condition: service_healthy
+volumes:
+  postgres:

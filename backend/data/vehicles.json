@@ -1,0 +1,362 @@
+[
+  {
+    "id": "bmw-i4-demo",
+    "name": "BMW i4",
+    "model": "Gran Turismo",
+    "summary": "AUTONEX demonstration fixture inspired by the BMW i4. All configurable trims, options, prices and numeric specifications in this catalog are illustrative, not a BMW factory build or live offer. See the knowledge hub for separately sourced BMW reference notes.",
+    "body_type": "gran-coupe",
+    "range_miles": 340,
+    "charge_time_10to80_min": 18,
+    "trims": [
+      {
+        "id": "trim-comfort",
+        "name": "Comfort",
+        "base_price": 58900,
+        "horsepower": 335,
+        "zero_to_sixty": 5.1,
+        "drivetrain": "RWD",
+        "description": "Balanced daily-driving trim with refined comfort tuning."
+      },
+      {
+        "id": "trim-performance",
+        "name": "Performance",
+        "base_price": 68900,
+        "horsepower": 455,
+        "zero_to_sixty": 3.8,
+        "drivetrain": "AWD",
+        "description": "Track-tuned suspension, larger brakes, and adaptive AWD."
+      },
+      {
+        "id": "trim-competition",
+        "name": "Competition",
+        "base_price": 82900,
+        "horsepower": 523,
+        "zero_to_sixty": 3.2,
+        "drivetrain": "AWD",
+        "description": "The most focused expression: carbon aero, track brakes, launch control."
+      }
+    ],
+    "colors": [
+      {
+        "id": "color-burgundy",
+        "name": "AUTONEX Burgundy (Demo)",
+        "price_delta": 0,
+        "hex": "#800020"
+      },
+      {
+        "id": "color-estoril-blue",
+        "name": "Estoril Blue Metallic",
+        "price_delta": 0,
+        "hex": "#0a63ff"
+      },
+      {
+        "id": "color-deep-blue",
+        "name": "Deep Ocean Blue",
+        "price_delta": 900,
+        "hex": "#0b2e6e"
+      },
+      {
+        "id": "color-alpine-white",
+        "name": "Alpine White",
+        "price_delta": 0,
+        "hex": "#f2f4f7"
+      },
+      {
+        "id": "color-jet-black",
+        "name": "Jet Black Metallic",
+        "price_delta": 900,
+        "hex": "#0c0c10"
+      },
+      {
+        "id": "color-graphite",
+        "name": "Graphite Grey",
+        "price_delta": 900,
+        "hex": "#4a4f57"
+      }
+    ],
+    "wheels": [
+      {
+        "id": "wheel-18",
+        "name": "18\" Aero Wheels",
+        "price_delta": 0
+      },
+      {
+        "id": "wheel-19",
+        "name": "19\" Sport Wheels",
+        "price_delta": 1200
+      },
+      {
+        "id": "wheel-20",
+        "name": "20\" Performance Wheels",
+        "price_delta": 2400
+      }
+    ],
+    "interiors": [
+      {
+        "id": "interior-fabric",
+        "name": "Sport Fabric",
+        "price_delta": 0
+      },
+      {
+        "id": "interior-leather",
+        "name": "Comfort Leather",
+        "price_delta": 2200
+      },
+      {
+        "id": "interior-alcantara",
+        "name": "Alcantara Race",
+        "price_delta": 3400
+      }
+    ],
+    "packages": [
+      {
+        "id": "package-comfort",
+        "name": "Comfort Package",
+        "price_delta": 2100,
+        "description": "Ventilated seats, soft-close doors, acoustic glass."
+      },
+      {
+        "id": "package-technology",
+        "name": "Technology Package",
+        "price_delta": 3200,
+        "description": "Augmented-reality head-up display, surround camera, adaptive cruise."
+      },
+      {
+        "id": "package-performance",
+        "name": "Performance Package",
+        "price_delta": 5400,
+        "description": "Adaptive dampers, carbon brakes, launch control."
+      }
+    ],
+    "reference_specifications": [
+      {
+        "label": "Sport mode power",
+        "value": "593 hp",
+        "variant": "2026 BMW i4 M60",
+        "source_url": "https://newsroom.bmwgroup.com/americas/2026-bmw-i4-update-measures",
+        "published_at": "2025-11-06",
+        "note": "US announcement. Sport mode output; not the demo trim configuration."
+      },
+      {
+        "label": "0\u201360 mph",
+        "value": "3.6 s",
+        "variant": "2026 BMW i4 M60",
+        "source_url": "https://newsroom.bmwgroup.com/americas/2026-bmw-i4-update-measures",
+        "published_at": "2025-11-06",
+        "note": "US manufacturer announcement figure. Conditions and equipment apply."
+      }
+    ],
+    "is_default": false
+  },
+  {
+    "id": "bmw-ix-demo",
+    "name": "BMW iX",
+    "model": "Performance SUV",
+    "summary": "AUTONEX demonstration fixture inspired by the BMW iX. All configurable trims, options, prices and numeric specifications in this catalog are illustrative, not a BMW factory build or live offer. See the knowledge hub for separately sourced BMW reference notes.",
+    "body_type": "suv",
+    "range_miles": 305,
+    "charge_time_10to80_min": 24,
+    "trims": [
+      {
+        "id": "trim-family",
+        "name": "Family",
+        "base_price": 64900,
+        "horsepower": 375,
+        "zero_to_sixty": 5.4,
+        "drivetrain": "AWD",
+        "description": "Three-row comfort with adaptive air suspension."
+      },
+      {
+        "id": "trim-sport",
+        "name": "M Sport",
+        "base_price": 76900,
+        "horsepower": 480,
+        "zero_to_sixty": 4.1,
+        "drivetrain": "AWD",
+        "description": "Sport-tuned SUV with performance brakes and 21-inch wheels."
+      }
+    ],
+    "colors": [
+      {
+        "id": "color-burgundy",
+        "name": "AUTONEX Burgundy (Demo)",
+        "price_delta": 0,
+        "hex": "#800020"
+      },
+      {
+        "id": "color-estoril-blue",
+        "name": "Estoril Blue Metallic",
+        "price_delta": 0,
+        "hex": "#0a63ff"
+      },
+      {
+        "id": "color-alpine-white",
+        "name": "Alpine White",
+        "price_delta": 0,
+        "hex": "#f2f4f7"
+      },
+      {
+        "id": "color-jet-black",
+        "name": "Jet Black Metallic",
+        "price_delta": 900,
+        "hex": "#0c0c10"
+      }
+    ],
+    "wheels": [
+      {
+        "id": "wheel-19",
+        "name": "19\" Sport Wheels",
+        "price_delta": 0
+      },
+      {
+        "id": "wheel-21",
+        "name": "21\" Performance Wheels",
+        "price_delta": 2600
+      }
+    ],
+    "interiors": [
+      {
+        "id": "interior-leather",
+        "name": "Comfort Leather",
+        "price_delta": 0
+      },
+      {
+        "id": "interior-premium",
+        "name": "Premium Merino Leather",
+        "price_delta": 4200
+      }
+    ],
+    "packages": [
+      {
+        "id": "package-family",
+        "name": "Family Package",
+        "price_delta": 2800,
+        "description": "Third-row seating, rear entertainment, extra USB-C ports."
+      },
+      {
+        "id": "package-technology",
+        "name": "Technology Package",
+        "price_delta": 3200,
+        "description": "Augmented-reality head-up display, surround camera, adaptive cruise."
+      }
+    ],
+    "reference_specifications": [
+      {
+        "label": "Power",
+        "value": "536 hp",
+        "variant": "2026 BMW iX xDrive60",
+        "source_url": "https://newsroom.bmwgroup.com/americas/the-new-bmw-ix",
+        "published_at": "2025-01-28",
+        "note": "US announcement. Historical reference; confirm current equipment and availability."
+      }
+    ],
+    "is_default": false
+  },
+  {
+    "id": "autonex-xuv-demo",
+    "name": "AUTONEX XUV",
+    "model": "G-Wagon-inspired XUV concept",
+    "summary": "A fictional AUTONEX electric adventure concept with a boxy G-Wagon-inspired silhouette. This is an independent design demonstration, not a Mercedes-Benz vehicle, factory configuration, specification sheet or live offer. All displayed prices, equipment and performance figures are illustrative.",
+    "body_type": "xuv",
+    "is_default": true,
+    "range_miles": 280,
+    "charge_time_10to80_min": 32,
+    "trims": [
+      {
+        "id": "trim-adventure",
+        "name": "Adventure",
+        "base_price": 89900,
+        "horsepower": 450,
+        "zero_to_sixty": 5.7,
+        "drivetrain": "AWD",
+        "description": "Demo adventure trim with upright styling, all-terrain wheels and comfort-focused electric driving."
+      },
+      {
+        "id": "trim-xuv-performance",
+        "name": "Adventure Performance",
+        "base_price": 109900,
+        "horsepower": 620,
+        "zero_to_sixty": 4.6,
+        "drivetrain": "AWD",
+        "description": "Demo performance trim with additional power, adaptive suspension and a sport-focused setup."
+      }
+    ],
+    "colors": [
+      {
+        "id": "color-burgundy",
+        "name": "AUTONEX Burgundy (Demo)",
+        "price_delta": 0,
+        "hex": "#800020"
+      },
+      {
+        "id": "color-obsidian-black",
+        "name": "Obsidian Black (Demo)",
+        "price_delta": 900,
+        "hex": "#141419"
+      },
+      {
+        "id": "color-alpine-white",
+        "name": "Alpine White (Demo)",
+        "price_delta": 0,
+        "hex": "#efede7"
+      },
+      {
+        "id": "color-desert-sand",
+        "name": "Desert Sand (Demo)",
+        "price_delta": 1200,
+        "hex": "#b7a48a"
+      },
+      {
+        "id": "color-estoril-blue",
+        "name": "Expedition Blue (Demo)",
+        "price_delta": 900,
+        "hex": "#183e62"
+      }
+    ],
+    "wheels": [
+      {
+        "id": "wheel-xuv-20",
+        "name": "20-inch All-Terrain Wheels (Demo)",
+        "price_delta": 0
+      },
+      {
+        "id": "wheel-xuv-22",
+        "name": "22-inch Adventure Wheels (Demo)",
+        "price_delta": 2400
+      }
+    ],
+    "interiors": [
+      {
+        "id": "interior-xuv-tan",
+        "name": "Saddle Tan (Demo)",
+        "price_delta": 0
+      },
+      {
+        "id": "interior-xuv-black",
+        "name": "Obsidian Cabin (Demo)",
+        "price_delta": 1800
+      }
+    ],
+    "packages": [
+      {
+        "id": "package-adventure",
+        "name": "Adventure Package (Demo)",
+        "price_delta": 3600,
+        "description": "Demonstration roof rack, underbody protection and expedition storage."
+      },
+      {
+        "id": "package-comfort",
+        "name": "Comfort Package (Demo)",
+        "price_delta": 2200,
+        "description": "Demonstration heated seats, cabin lighting and acoustic glazing."
+      },
+      {
+        "id": "package-technology",
+        "name": "Technology Package (Demo)",
+        "price_delta": 3200,
+        "description": "Demonstration surround cameras and driver information displays."
+      }
+    ],
+    "reference_specifications": []
+  }
+]

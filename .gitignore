@@ -1,41 +1,33 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dependencies
+/node_modules/
+**/.venv/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# Generated builds and test reports
+/dist/
+/coverage/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+*.tsbuildinfo
 
-# testing
-/coverage
+# Local Python runtime data and caches
+/backend/var/
+/var/
+**/__pycache__/
+*.py[cod]
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+# Local configuration and logs
+.env*
+!.env.example
 .DS_Store
 *.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*-debug.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Removed assistant-specific project files
+/CLAUDE.md
+/CLUADE.md
