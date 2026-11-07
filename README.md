@@ -4,8 +4,6 @@
 
 Independent automotive customer experiences, vehicle intelligence, knowledge retrieval, service demonstrations, and observable agent workflows. BMW is the initial demonstration domain. This project has no official BMW affiliation, authorized partner integration, live inventory, or live BMW account access.
 
-The UI follows the supplied dual-theme dashboard reference: burgundy `#800020`, deep burgundy `#4A0015`, warm light `#FAF7F4`, dark `#180B12`, and Times New Roman. Navigation, interface headings, and buttons display in uppercase. Input, document text, API values and technical identifiers retain their original case.
-
 ## Local setup
 
 Requires Node 24+ and pnpm for the complete browser demonstration:
